@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "urbi"
+version = "0.1.0"
+description = "The easiest way to create simulated API services."
+authors = ["Peter Drienko <drienkop@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.2.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.linters.dependencies]
+black = "^22.12.0"
+isort = "^5.11.2"
+flake8 = "^6.0.0"
+
+
+[tool.poetry.group.testing.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

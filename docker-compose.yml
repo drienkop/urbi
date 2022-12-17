@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  urbi:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - /tmp/mappings:/mappings
+    command: python -m flask run --host=0.0.0.0
